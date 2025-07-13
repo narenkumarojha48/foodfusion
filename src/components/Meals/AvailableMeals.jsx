@@ -1,7 +1,6 @@
 import styles from "./MealsSummary.module.css";
 import MealItem from "./MealItem";
 import Card from "../UI/Card";
-import { useCartContext } from "../contexts/CartContextProvider";
 const DUMMY_MEALS = [
     {
         id:"m1",
@@ -30,7 +29,6 @@ const DUMMY_MEALS = [
 ]
 
 const AvailableMeals = () => {
-  const cartCtx = useCartContext();
   return (
     <section className={styles.meals}>
       <ul>
